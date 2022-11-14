@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoApp.MainPage">
+
+    <StackLayout>
+        
+        <Frame BackgroundColor="DarkRed" Padding="36" CornerRadius="0" AutomationProperties.IsInAccessibleTree="True" BorderColor="#38BE0F">
+            <Label Text="Ejercicio 2.4" HorizontalTextAlignment="Center" TextColor="Black" FontSize="60"/>
+        </Frame>
+        <Image Source="http://fundahrse.org/wp-content/uploads/2015/12/UTH-copia-edit.jpg"
+                   HeightRequest="200"
+                   WidthRequest="600"
+                   HorizontalOptions="CenterAndExpand"
+                   Aspect="Fill"/>
+        <Button x:Name="btnAddVideo" Text="CREAR NUEVO VIDEO" Clicked="btnAddVideo_Clicked"></Button>
+        <Button x:Name="btnViewVideos" Text="VER VIDEOS" Clicked="btnViewVideos_Clicked"></Button>
+        <Button x:Name="btnPlay" Text="REPRODUCTOR DE VIDEO" Clicked="btnPlay_Clicked"></Button>
+        <Label Text="© Programacion Movil 2 2022" HorizontalTextAlignment="Center" />
+    </StackLayout>
+
+</ContentPage>
